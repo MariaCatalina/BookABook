@@ -1,0 +1,137 @@
+.container {
+    margin: 20px;
+    height: 100%;
+    width: 100%;
+}
+
+.firstPart{
+    padding: 10px;
+    background: white;
+    width: 60%;
+    height: 50%;
+    color: #00008B;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.feedback {
+    padding: 10px;
+    background: white;
+    width: 60%;
+    height: 50%;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.bookDescription {
+    width: 80%;
+}
+
+.forum {
+ color: #8B0000;
+ margin: 10px;
+}
+
+.giveFeedback{
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.title{
+    font-size: 50px;
+    margin:10px;
+    font-family: 'Tangerine', serif;
+}
+
+.author{
+    font-size: 20px;
+    margin:10px;
+    margin-left: 50px;
+}
+
+.desciption{
+    font-size: 20px;
+    margin: 10px;
+}
+
+.bookBtn {
+    height: 60px;
+    width: 150px;
+    margin:20px;
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: #4CAF50;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+}
+
+.addFeedback {
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: #4CAF50;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+}
+
+.lableInput {
+    font-size: 20px;
+}
+
+.feedbackUsers {
+    padding: 10px;
+    background: white;
+    width: 60%;
+    height: 50%;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    // position: relative;
+    // margin: auto;
+    // top: 0;
+    // right: 0;
+    // bottom: 0;
+    // left: 0;
+}
+
+.user-logo{
+    width: 60px;
+    height: 50px;
+}
+
+.comments{
+    margin-left: 15px;
+}
+
+.fTitle{
+    font-size: 20px;
+    color: #00008B;
+}
+
+.location{
+    color: black;
+}

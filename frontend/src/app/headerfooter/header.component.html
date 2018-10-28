@@ -1,0 +1,25 @@
+<div class="header-component">
+    <mat-toolbar color="primary">
+        <span>
+            <img src="assets/login-back.jpg" (click)="returnToDash()" class="angular-logo">
+        </span>
+        <div class="appTitle">
+            <span class="title" id="title" (click)="returnToDash()"> Book-A-Book
+            </span>
+        </div>
+
+        <div class="starsDiv">
+            <span class="stars" id="stars"> {{stars}} </span>
+            <span>
+                <img src="assets/star.png" class="star-logo">
+            </span>
+        </div>
+
+        <div class="menu">
+            <span class="fill-remaining-space"></span>
+            <button class="buttonMenu" *ngIf="adminUser" (click)="addNewBook()" mat-button>Add new Book</button>
+            <button class="buttonMenu" *ngIf="simpleUser" (click)="myBooksBooked()" mat-button>Books booked</button>
+            <button class="buttonMenu" mat-button (click)="onLogout()">Logout</button>
+        </div>
+    </mat-toolbar>
+</div>

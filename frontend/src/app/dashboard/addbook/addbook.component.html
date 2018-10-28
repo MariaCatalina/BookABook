@@ -1,0 +1,57 @@
+<div class="addbook-area">
+
+    <div class="littleDesc">
+        <span> Add a new book in your account</span>
+    </div>
+
+  <div class="container">
+    <form (ngSubmit)="addNewBook()">
+      <div class="row">
+        <div class="col-25">
+          <label for="bookTitle">Book Title</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="bookTitle" name="firstname" placeholder="Your book..." [(ngModel)]="model.title">
+        </div>
+      </div>
+      <div class="row">
+          <div class="col-25">
+            <label for="bookTitle">Book Author</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="bookTitle" name="firstname" placeholder="Your book atuhor..." [(ngModel)]="model.author">
+          </div>
+        </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="language">Language</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="language" name="languageBook" placeholder="Book's language..." [(ngModel)]="model.language">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="disponibility">Disponibility</label>
+        </div>
+        <div class="col-75">
+          <select id="disponibility" name="disponibility"  [(ngModel)]="model.disponibility">
+            <option value="1Month">1 Month</option>
+          </select>
+        </div>
+      </div>
+     
+      <div class="row">
+        <div class="col-25">
+          <label for="description">Description</label>
+        </div>
+        <div class="col-75">
+          <textarea id="description" name="description"  [(ngModel)]="model.description" placeholder="Write something about the book.." style="height:200px"></textarea>
+        </div>
+      </div>
+      <div class="row">
+        <input class="addBook" type="submit" value="Submit">
+      </div>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,45 @@
+<div class="adminPart">
+    <div class="container">
+        <div *ngFor="let book of books">
+            <div class="book-area">
+                <span class="title">{{book.title}} {{book.author}}</span>
+                <span class="daysRemaing">30 zile</span>
+
+                <button class="userReturn" (click)="returnToProp(book)">Return</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="returnedBooksDiv" *ngIf="bookedUser">
+        <span class="cevaCuMargine"> Books received back:</span>
+        <br>
+        <br>
+        <span class="cevaCuMargine"  *ngIf="showEmpty">You don't have any book here!</span>
+        <div class="returnedBooks">
+            <div *ngFor="let bookReturned of booksReceived">
+                <div class="book-area-returned">
+                    <span class="title">{{bookReturned.title}} {{bookReturned.author}}</span>
+                    <span class="user"> User: {{bookReturned.user}} </span>
+                    <form (ngSubmit)="returnBookToLib(bookReturned)">
+                        <div class="ret">
+                            <div class="inputStars">
+                                <select id="condition" name="condition"  [(ngModel)]="modelR.condition">
+                                    <option value="1">1 *</option>
+                                    <option value="2">2 *</option>
+                                    <option value="3">3 *</option>
+                                    <option value="3">4 *</option>
+                                    <option value="3">5 *</option>
+                                </select>
+                            </div>
+                            <div class="row">
+                                <input class="send" type="submit" value="Submit">
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

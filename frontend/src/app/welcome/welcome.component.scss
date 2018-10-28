@@ -1,0 +1,58 @@
+.container {
+    padding: 10px;
+    background: white;
+    width: 60%;
+    height: 60%;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    border-width: 1px;
+    border-color: #C3C7CD;
+    border-radius: 4px;
+    box-sizing: content-box;
+    text-align: center;
+    position: relative;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.container-buttons{
+    /* margin: auto; */
+    margin: 50px;
+}
+
+.allPage{
+    height: 100%;
+}
+
+.appTitle{
+    font-size: 50px;
+}
+
+.loginReg {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    /* display: inline-block; */
+    font-size: 16px;
+    margin: 20px;
+    cursor: pointer;
+    /* margin: auto; */
+    display: block;
+    width: 200px;
+    height: 70px;
+    font-size: 30px;
+}
+
+.description {
+    text-align: center;
+    font-size: 30px;
+    align-self: center;
+    margin:20px;
+}

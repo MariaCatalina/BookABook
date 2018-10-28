@@ -1,0 +1,22 @@
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height:100%
+}
+
+.cardList{
+  height: 100%;
+  margin: 20px;
+  display: flex;
+  flex-flow: row wrap;
+    box-sizing: border-box;
+    padding-top: 20px;
+    padding-left: 30px;
+    flex: 1;
+    flex-grow: 1;
+}
+
+.cardDetails{
+    cursor: pointer;
+}

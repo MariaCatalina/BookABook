@@ -1,0 +1,20 @@
+<div class="header-component">
+    <div class="container">
+        <div class="settings-wrapper" (click)="onSettingsClicked($event)" [ngClass]="{'settings-wrapper':!showSettingsPopup, 'settings-wrapper-hover':showSettingsPopup}">
+            <div class="settings">
+                <div [ngClass]="{'settings-pic':!showSettingsPopup, 'settings-pic-hover':showSettingsPopup}">
+                    <div *ngIf="showSettingsPopup === true">
+                        <div class="settings-popup-box" id="header-menu-settings-popup-box">
+                            <div *ngFor="let entry of settingEntries">
+                                <div class="popup-entry" (click)="onEntryClicked($event,entry)">
+                                    <span class="popup-span"> {{ entry.label }} </span>
+                                </div>
+                                <hr class="hr-separator">
+                            </div>
+                        </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

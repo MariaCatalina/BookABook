@@ -1,0 +1,73 @@
+<div class="container">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+
+    <div class="firstPart">
+        <div class="bookDescription">
+            <span class="title"> {{book.title}}</span>
+            <br>
+            <span class="author"> de {{book.author}}</span>
+
+            <br>
+            <br>
+            <br>
+            <span class="desciption">{{book.description}}</span>
+            <br>
+            <br>
+            <br>
+            <span class="location">Disponible: {{book.disponibility}}</span>
+        </div>
+
+        <button id="bookBookID" class="bookBtn" (click)="borrowBook(book)">Book</button>
+    </div>
+    <div class="feedback">
+        <br>
+        <br>
+        <span class="giveFeedback"> Did you enjoy this book? White a comment below...</span>
+        <div class="forum">
+            <form (ngSubmit)="submitFeedback()">
+                <div class="row">
+                    <div class="col-25">
+                        <label class="lableInput" for="title">Title:</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="title" name="commentTitle" placeholder="Your comment title..." [(ngModel)]="model.title">
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-25">
+                        <label class="lableInput" for="feedback">Feedback:</label>
+                    </div>
+                    <div class="col-75">
+                        <textarea id="feedback" [(ngModel)]="model.comment" name="feedback" placeholder="Write something about the book.." style="height:100px; width:400px"></textarea>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <input class="addFeedback" type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div *ngFor="let feedback of feedbackList">
+
+            <div class="feedbackUsers">
+                <span>
+                    <img src="assets/user.jpg" class="user-logo">
+                </span>
+                <div class="comments">
+
+                    <span class="fTitle">
+                        {{feedback.title}}
+                    </span>
+                    <br>
+                    <span>
+                        {{feedback.comment}}
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

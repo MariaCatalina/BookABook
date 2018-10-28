@@ -1,0 +1,122 @@
+#header-component {
+    bottom: 0px;
+    height: 33px;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    perspective-origin: 472.5px 15px;
+    transform-origin: 472.5px 15px;
+    background: black;
+    font-size: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.angular-logo {
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+    padding: 5px;
+    margin-bottom: 3px;
+}
+
+mat-card {
+    max-width: 400px;
+    // margin: 2em auto;
+    text-align: center;
+  }
+  .signin-content {
+    padding: 60px 1rem;
+  }
+  .full-width-input {
+    width: 100%;
+  }
+
+
+.title {
+    padding-top: 15px;
+    color: white;
+    width: 320px;
+    height: 300px;
+    align-self: center;
+    font-size: 20px;
+}
+
+.fill-remaining-space{
+    width: 1000px;
+}
+
+.starsDiv{
+    margin-left: 30px;
+    height: 100%;
+}
+
+.star-logo {
+    width: 40px;
+    height: 40px;
+}
+
+.stars{
+    height: 100%;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+.menu{
+    // margin-left: 400px;
+    color: white;
+    background-color:black;
+}
+
+.buttonMenu{
+    background-color: black;
+    font-size: 18px;
+}
+
+.appTitle {
+    cursor: pointer;
+    align-content: center;
+    font-size: 20px;
+    margin-left: 20px;
+    color: white;
+}
+
+
+ .navigation {
+    display: flex;
+    flex-direction: row;
+ }
+ 
+ #logOut {
+    bottom: -23px;
+    box-sizing: border-box;
+    color: rgb(241, 241, 241);
+    display: block;
+    height: 20px;
+    right: 10px;
+    position: absolute;
+    /*right: 787.062px;*/
+    top: 7px;
+    width: 160px;
+    column-rule-color: rgb(241, 241, 241);
+    perspective-origin: 67.9688px 8.5px;
+    transform-origin: 67.9688px 8.5px;
+    background: rgb(70, 74, 81);/* none repeat scroll 0% 0% / auto padding-box border-box;*/
+    border: 0px none rgb(241, 241, 241);
+    font-size: 14px;
+    font-style: italic;
+    outline: rgb(241, 241, 241) none 0px;
+    padding: 0px 8px;
+ }
+ 
+ .menu {
+    justify-content: center;
+    display: flex;
+    width: 100%;
+ }
+ 
+
+ 

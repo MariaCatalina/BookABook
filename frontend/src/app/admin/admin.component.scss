@@ -1,0 +1,49 @@
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height:100%
+}
+
+.usersList {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 30%;
+    height: 80px;
+    transition: all 500ms linear;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #C3C7CD;
+    border-radius: 4px;
+    box-sizing: content-box;
+    text-align: left;
+    position: relative;
+    margin: 20px;   
+    text-align: center;
+}
+
+.list{
+    font-size: 20px;
+}
+
+.stars{
+    color: red;
+}
+
+.userDelete{
+    font-size: 20px;
+    margin: 20px;
+}
+
+.userDelete {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 90px;
+    height: 40px;
+}
