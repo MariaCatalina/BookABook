@@ -50,4 +50,8 @@ export class HeaderComponent {
     onLogout() {
         this.router.navigate(['/welcome']);
     }
+
+    maps(){
+        this.router.navigate(['/maps']);
+    }
 }

@@ -17,6 +17,7 @@
 
         <div class="menu">
             <span class="fill-remaining-space"></span>
+            <button class="buttonMenu" (click)="maps()" mat-button>Books Locations</button>
             <button class="buttonMenu" *ngIf="adminUser" (click)="addNewBook()" mat-button>Add new Book</button>
             <button class="buttonMenu" *ngIf="simpleUser" (click)="myBooksBooked()" mat-button>Books booked</button>
             <button class="buttonMenu" mat-button (click)="onLogout()">Logout</button>

@@ -14,6 +14,8 @@ import { AppMaterialModule } from './app-material/app-material.module';
 import { HeaderFooterModule } from './headerfooter/headerfooter.module';
 import { PublisherModule } from './publisher/publisher.module';
 import { AdminModule } from './admin/admin.module';
+import { GoogleMapModule } from './map/map.module';
+import { MessageService } from './message.service';
 
 @NgModule({
   declarations: [
@@ -30,10 +32,10 @@ import { AdminModule } from './admin/admin.module';
     AppMaterialModule,
     HeaderFooterModule,
     PublisherModule,
-    AdminModule
-
+    AdminModule,
+    GoogleMapModule
   ],
-  providers: [GuardModuleModule],
+  providers: [GuardModuleModule, MessageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
